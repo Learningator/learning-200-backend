@@ -15,6 +15,9 @@ app.use(bodyParser.json())
 
 
 app.use('/main', require('./routes/main'))
+
+app.use('/user', require('./routes/getUserData'))
+
 app.use('/', (req, res) => {
   res.status(404).send('Not Found')
 })
