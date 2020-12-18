@@ -1,0 +1,28 @@
+{
+  "name": "learning-200-backend",
+  "version": "1.0.0",
+  "description": "backend for learn 200 hackaton",
+  "main": "package.json",
+  "scripts": {
+    "dev": "nodemon -L src/index",
+    "start": "node src/index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joethecoderr/learning-200-backend.git"
+  },
+  "author": "learningator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joethecoderr/learning-200-backend/issues"
+  },
+  "homepage": "https://github.com/joethecoderr/learning-200-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  }
+}
