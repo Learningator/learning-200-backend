@@ -123,11 +123,11 @@ class MainServices {
 
   getCompletedCourses = async (user) =>{
     let courses;
-    const url = 'http://3.137.109.12:5000/api/' + user;
+    const url = 'https://learning-200-scraper.herokuapp.com/api/' + user;
     try{ 
-      //courses = await axios.get(url) 
+      courses = await axios.get(url) 
       //console.log(courses.data)
-      return fake_response_scraper2 || {}
+      return courses.data || {}
     }
     catch(err){
       console.error(err)
