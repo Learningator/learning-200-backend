@@ -125,9 +125,9 @@ class MainServices {
     let courses;
     const url = 'http://3.137.109.12:5000/api/' + user;
     try{ 
-      courses = await axios.get(url) 
+      //courses = await axios.get(url) 
       //console.log(courses.data)
-      return courses.data || {}
+      return fake_response_scraper2 || {}
     }
     catch(err){
       console.error(err)
