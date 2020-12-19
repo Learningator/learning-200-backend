@@ -6,10 +6,17 @@ const router = express.Router()
 const mainService = require('../services/mainService')
 const MainServices = new mainService()
 
-router.get('/',async (req, res) => {
-  const temp = 'temp'
+let fake_request_frontend= {
+  'user': 'cvander',
+  'field': 'DS',
+  'subfield': 'ML/DL'
+}
+
+router.post('/',async (req, res) => {
+  const params = req.body
+  const response = await MainServices.sendInfoToML({params})
   res
     .status(200)
-    .send()
+    .send(response)
 })
 module.exports = router
