@@ -123,7 +123,7 @@ class MainServices {
 
   getCompletedCourses = async (user) =>{
     let courses;
-    const url = 'http://localhost:5000/api/' + user;
+    const url = 'https://learning-200-scraper.herokuapp.com/api/' + user;
     try{ 
       courses = await axios.get(url) 
       //console.log(courses.data)
