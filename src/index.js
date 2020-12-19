@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 
 app.use(cors({origin: '*'} )) 
 app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
